@@ -1,4 +1,7 @@
 # DSM-CUSUM
+
+This repo is still under construction!
+
 The official code repository of [Sequential Change Point Detection via Denoising Score Matching](https://arxiv.org/abs/2501.12667). 
 
 ## Abstract
