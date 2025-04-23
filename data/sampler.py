@@ -78,7 +78,7 @@ class GaussianMixtureSampler:
             raise NotImplementedError(f'Got unexpected type: {dtype}.')
 
         pdf = torch.stack(pdf_comps, -1)    # [ batch_size, ncomps ] th
-        pdf = pdf.sum(-1)                   # [ batch_size ] th
+        pdf = pdf.mean(-1)                   # [ batch_size ] th
 
         if otype == 'numpy':
             pdf = pdf.detach().numpy()      # [ batch_size ] np
